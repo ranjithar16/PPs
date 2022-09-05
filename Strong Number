@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+int n,temp,rem,sum=0,i,fact;
+printf("enter the value of n\n");
+scanf("%d",&n);
+temp=n;
+while(temp>0)
+{
+fact=1,i=1;
+rem=temp%10;
+While(i<=rem)
+{
+fact=fact*i;
+i++;
+}
+printf("fact of %d =%d\n",rem,fact);
+sum=sum+fact;
+temp=temp/10;
+}
+printf("sum of the fact of a given number %d is =%d\n",n,sum);
+if(n==sum)
+printf("%d is a strong number\n",n);
+else
+printf("%d is a not strong number\n",n);
+return 0;
+}
