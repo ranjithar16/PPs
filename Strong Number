@@ -9,7 +9,7 @@ while(temp>0)
 {
 fact=1,i=1;
 rem=temp%10;
-While(i<=rem)
+while(i<=rem)
 {
 fact=fact*i;
 i++;
